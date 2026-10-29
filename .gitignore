@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Entorno
+.env
+
+# Herramientas
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+
+# Config local de OpenCode
+opencode.json

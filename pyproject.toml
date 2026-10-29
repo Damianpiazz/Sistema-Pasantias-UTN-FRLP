@@ -1,0 +1,20 @@
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+extend-exclude = ["*/migrations/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "DJ"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["apps", "config"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+pythonpath = ["backend"]
+python_files = ["test_*.py"]
+testpaths = ["backend/apps"]
+markers = [
+    "unit: tests unitarios",
+    "integration: tests de integración contra endpoints",
+]
